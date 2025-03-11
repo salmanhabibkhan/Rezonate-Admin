@@ -1,0 +1,376 @@
+/* The switch - the box around the slider */
+body {
+  background-color: #f4f7f9;
+}
+.content-wrapper {
+  background: #f4f7f9;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  content: "x";
+  color: #e91e63;
+}
+
+input:checked + .slider {
+  color: #000;
+  background-color: #4caf50;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4caf50;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  content: "✔";
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gr-bg-1 {
+  background: #f9aa1f;
+}
+.gr-bg-2 {
+  background: #6d6de5;
+}
+.gr-bg-3 {
+  background: #ff4c61;
+}
+.gr-bg-4 {
+  background: #343851;
+}
+.gr-bg-5 {
+  background: #ba7bfb;
+}
+.gr-bg-6 {
+  background: #38c6f7;
+}
+.gr-bg-7 {
+  background-image: linear-gradient(
+    to right,
+    #636f8e 0%,
+    #acb8da 100%
+  ) !important;
+}
+.gr-bg-8 {
+  background-image: linear-gradient(
+    to right,
+    #f10075 0%,
+    #f36eae 100%
+  ) !important;
+}
+.gr-bg-9 {
+  background-image: linear-gradient(
+    to right,
+    #4800c9 0%,
+    #884af1 100%
+  ) !important;
+}
+.gr-bg-10 {
+  background-image: linear-gradient(
+    to right,
+    #00cccc 0%,
+    #96e8e8 100%
+  ) !important;
+}
+.small-box h3,
+.small-box p {
+  color: #fff;
+}
+
+/* For Webkit (Chrome, Safari), and Edge */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the tracking area */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scroll thumb */
+  border-radius: 10px; /* Roundness of the scroll thumb */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scroll thumb when hovered */
+}
+
+/* For Firefox */
+.sidebar {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #f1f1f1; /* thumb and track color */
+}
+
+.small-box {
+  box-shadow: none;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.small-box > .small-box-footer:hover {
+  background: rgb(0 0 0 / 21%) !important;
+}
+
+.cisocial_table {
+  margin-top: 30px;
+}
+
+.cisocial_table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.cisocial_table td,
+.cisocial_table th {
+  border: 1px solid #dee2e6;
+}
+
+.cisocial_table tbody tr:nth-of-type(odd) {
+  background-color: rgb(129 125 125 / 5%);
+}
+.cisocial_table tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.card-primary:not(.card-outline) > .card-header,
+.card-primary:not(.card-outline) > .card-header a {
+  color: #000;
+  font-weight: bold;
+}
+
+.card-primary:not(.card-outline) > .card-header {
+  background-color: #ffffff;
+  border-bottom: 0;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  border-radius: 17px;
+  -webkit-box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+}
+
+.card .card-header {
+  background-color: #fff;
+  padding: 16px 24px;
+  border-bottom: 1px dashed rgba(106, 113, 133, 0.3);
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  position: relative;
+  text-transform: capitalize;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+.main-header {
+  box-shadow: 0px 0px 10px rgba(39, 32, 120, 0.1);
+}
+
+aside.main-sidebar {
+  background: #2a3650;
+}
+
+.table_title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #f8f8f8;
+}
+
+.admin-side-tables thead th {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.nav-sidebar > .nav-item {
+  margin-bottom: 5px;
+}
+
+.main-sidebar .brand-text,
+.main-sidebar .logo-xl,
+.main-sidebar .logo-xs,
+.sidebar .nav-link p,
+.sidebar .user-panel .info,
+.sidebar-mini .nav-legacy > .nav-item .nav-link .nav-icon,
+.sidebar-mini-md .nav-legacy > .nav-item .nav-link .nav-icon {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+[class*="sidebar-dark"] .nav-legacy.nav-sidebar > .nav-item .nav-treeview,
+[class*="sidebar-dark"] .nav-legacy.nav-sidebar > .nav-item > .nav-treeview {
+  background: #161d2c;
+}
+
+.menu-open > a.nav-link {
+  box-shadow: 0px 6px 7px #11141a;
+}
+.menu-open ul {
+  position: relative;
+}
+
+.menu-open li a::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 40px;
+  border-radius: 100%;
+  background: rgba(203, 204, 206, 0.57);
+}
+
+.menu-open li a::after {
+  position: absolute;
+  content: "";
+  top: 48%;
+  width: 16px;
+  border-top: 1px solid rgba(203, 204, 206, 0.57);
+  border-top-color: #fff;
+  left: 24px;
+}
+.menu-open.has-treeview > ul::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 0;
+  background: rgba(203, 204, 206, 0.57);
+  top: 6px;
+  left: 27px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+  height: calc(100% - 12px);
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.nav-flat.nav-sidebar > .nav-item .nav-treeview .nav-item > .nav-link,
+.nav-flat.nav-sidebar > .nav-item > .nav-treeview .nav-item > .nav-link {
+  border-left: 0.2rem solid;
+  padding-left: 37px;
+}
+
+.cisocial_table tbody tr {
+  border-bottom: 2px dotted #dee2e6;
+}
+
+.small-box .icon-left {
+  position: absolute;
+  left: -11px;
+  font-size: 92px;
+  opacity: 0.3;
+}
+
+.icon-right {
+  font-size: 92px;
+  opacity: 0.5;
+}
+
+.menu-open li a.active::before {
+  width: 10px;
+  height: 10px;
+  background: #dc3545;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(241 241 241 / 50%);
+}
+
+/* Container for the pagination */
+nav[aria-label="Page navigation"] .pagination {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: center; /* Center the pagination horizontally */
+}
+
+/* Style for each pagination item */
+nav[aria-label="Page navigation"] .pagination li {
+  margin: 0 4px; /* Add some space around each pagination item */
+}
+
+/* Style for pagination links */
+nav[aria-label="Page navigation"] .pagination li a {
+  color: #0275d8; /* Change the color for the links */
+  background-color: #fff; /* Background color for the links */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 4px; /* Rounded corners for the links */
+  padding: 5px 10px; /* Padding inside the links */
+  text-decoration: none; /* Remove underline from links */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Style for the active page item */
+nav[aria-label="Page navigation"] .pagination li.active a,
+nav[aria-label="Page navigation"] .pagination li.active a:hover {
+  color: #fff; /* Change text color for active/hover state */
+  background-color: #0275d8; /* Background color for active/hover state */
+  border-color: #0275d8; /* Border color for active/hover state */
+}
+
+/* Hover effect for links */
+nav[aria-label="Page navigation"] .pagination li a:hover {
+  background-color: #0294f5; /* Slightly lighter blue on hover */
+  border-color: #0294f5; /* Matching border color on hover */
+}

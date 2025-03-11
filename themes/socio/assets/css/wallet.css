@@ -1,0 +1,128 @@
+
+.wallet-card-section {
+    position: relative
+}
+
+.wallet-card {
+    
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.09);
+    border-radius: 10px;
+    padding: 20px 24px;
+    position: relative;
+    z-index: 1
+}
+
+.wallet-card .balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 100px
+}
+
+.wallet-card .balance .left {
+    padding-right: 10px
+}
+
+.wallet-card .balance .right {
+    padding: 0
+}
+
+.wallet-card .balance .right .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1em;
+    color: #6236FF;
+    background: rgba(98,54,255,0.1);
+    padding:10px ;
+    font-size: 19px;
+    border-radius: 10px
+}
+
+.wallet-card .balance .right .button:hover {
+    background: #6236FF !important;
+    color: #fff !important
+}
+
+.wallet-card .balance .title {
+    color: #27173E;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px
+}
+
+.wallet-card .balance .total {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    font-size: 32px
+}
+
+.wallet-card .wallet-footer {
+    border-top: 1px solid #DCDCE9;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between
+}
+
+.wallet-card .wallet-footer .item {
+    flex: 1;
+    text-align: center
+}
+
+.wallet-card .wallet-footer .item a {
+    display: block
+}
+
+.wallet-card .wallet-footer .item a:active {
+    transform: scale(0.94)
+}
+
+.wallet-card .wallet-footer .item .icon-wrapper {
+    background: #6236FF;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 14px
+}
+
+.wallet-card .wallet-footer .item strong {
+    display: block;
+    
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.2em
+}
+
+
+
+.stat-box {
+   
+  
+    border-radius: 10px;
+    padding: 20px 24px
+}
+
+.stat-box .title {
+    font-size: 13px;
+    color: #958d9e;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.4em
+}
+
+.stat-box .value {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    color: #27173E
+}

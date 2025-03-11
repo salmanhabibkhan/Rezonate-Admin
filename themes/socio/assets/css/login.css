@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    background-image: url('../images/login_bg.webp');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    padding: 0 !important;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo {
+    width: 100px;
+}
+
+.logo-img {
+    max-height: 100px;
+}
+
+/* Login Section */
+.body_login {
+    margin-bottom: 50px;
+    background: url(../images/bg_login.png) no-repeat center;
+    background-size: contain;
+}
+
+.body_login > h1 {
+    color: #333145;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.body_login > p {
+    font-size: 15px;
+    width: 87%;
+    color: #636175;
+}
+
+/* Form Container */
+.login_reg_form {
+    background: #fff;
+    max-width: 400px;
+    padding: 25px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%), 0 15px 40px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.05, 0.45, 0.1, 1);
+}
+
+/* Top Section */
+.top_section {
+    background-color: #fff;
+    padding: 12px 0;
+    border-bottom: 2px solid #d3d4de;
+}
+
+/* Bottom Section */
+.bottom_section {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Button Styles */
+.btn-main {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Welcome Footer Navigation */
+.welcome-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.welcome-footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.welcome-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Buttons */
+.social_buttons {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.bg-facebook {
+    background-color: #1877F2; /* Official Facebook blue */
+}
+
+.bg-facebook:hover {
+    background-color: #165dbb;
+}
+
+.bg-google {
+    background-color: #DB4437; /* Official Google red */
+}
+
+.bg-google:hover {
+    background-color: #c5382b;
+}
+
+.text-facebook {
+    color: #1877F2;
+}
+
+.text-facebook:hover {
+    color: #165dbb;
+}
+
+.text-google {
+    color: #DB4437;
+}
+
+.text-google:hover {
+    color: #c5382b;
+}
+
+/* Error Alert */
+.error.alert {
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Language Selection Modal */
+.custom-language-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-language-list li {
+    flex: 1 1 120px;
+    border: 1px solid #b0b0b0;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+/* Responsive Media Queries */
+@media screen and (min-width: 600px) {
+    .welcome-footer {
+        justify-content: space-between;
+    }
+}
